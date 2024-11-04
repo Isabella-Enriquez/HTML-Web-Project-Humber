@@ -1,0 +1,3 @@
+@import url("sandpc.css") screen and (min-device-width: 769px);
+@import url("sandmobile.css") screen and (max-device-width: 768px);
+

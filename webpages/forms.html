@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Reservation Forms</title>
+        <link rel="stylesheet" href="../css/forms.css">
+        <link rel="icon" href="../images/formicon.ico" type="images/xicon">
+        <!-- Image reference: https://www.spriters-resource.com/nintendo_switch/supermarioodyssey/sheet/102470/ -->
+</head>
+<body>
+    <div id="nav-container">
+        <nav>
+            <div id="nav-title">
+                <h3>Odyssey Travel Agency</h3>
+            </div>
+            <div>
+                <a href="../index.html">Home</a>
+            </div>
+            <span>|</span>
+            <div id="seaside-nav" class="img-nav">
+                <a href="../webpages/seaside.html">Bubblaine</a>
+            </div>
+            <span>|</span>
+            <div id="sand-nav" class="img-nav">
+                <a href="../webpages/sand.html">Tostarena</a>
+            </div>
+            <span>|</span>
+            <div id="metro-nav" class="img-nav">
+                <a href="../webpages/metro.html">New Donk City</a>
+            </div>
+            <span>|</span>
+            <div id="wooded-nav" class="img-nav">
+                <a href="../webpages/wooded.html">Steam Gardens</a>
+            </div>
+            <span>|</span>
+            <div id="cascade-nav" class="img-nav">
+                <a href="../webpages/cascade.html">Fossil Falls</a>
+            </div>
+            <span>|</span>
+            <div>
+                <a href="../webpages/forms.html">Reservation</a>    
+            </div>
+        </nav>
+    </div>
+    <header>
+        <h1>Reservation Forms</h1>
+    </header>
+    <main>
+        <div id="inquiry-form">
+            <h2>INQUIRY FORM</h2>
+            
+            <form id="inquiry" name="inquiry" action="../webpages/form_submit.html">
+                <fieldset id="main_field1">
+                    <fieldset>
+                        <legend>Preferences</legend>
+                        <div class="six">
+                            <section><label>Locations:</label></section>
+                            <section>
+                                <input type="checkbox" id="seaside" name="seaside" value="seaside">
+                                <label for="seaside">Bubblaine</label>
+                            </section>
+                            <section>
+                                <input type="checkbox" id="sand" name="sand" value="sand">
+                                <label for="sand">Tostarena</label>
+                            </section>
+                            <section>
+                                <input type="checkbox" id="metro" name="metro" value="metro">
+                                <label for="metro">New Donk City</label>
+                            </section>
+                            <section>
+                                <input type="checkbox" id="wooded" name="wooded" value="wooded">
+                                <label for="wooded">Steam Gardens</label>
+                            </section>
+                            <section>
+                                <input type="checkbox" id="cascade" name="cascade" value="cascade">
+                                <label for="cascade">Fossil Falls</label>
+                            </section>
+                        </div>
+                        <div>
+                            <section><label>Vacation Type:</label></section>
+                            <div class="three">
+                                <section>
+                                    <input type="radio" id="nature" name="vaca_type" value="nature">
+                                    <label for="nature" class="radio_label">Nature-based</label>
+                                </section>
+                                <section>
+                                    <input type="radio" id="city" name="vaca_type" value="city">
+                                    <label for="city" class="radio_label">City-based</label>
+                                </section>
+                                <section>
+                                    <input type="radio" id="water" name="vaca_type" value="water">
+                                    <label for="water" class="radio_label">Water-based</label>
+                                </section>
+                            </div>
+                        </div>
+                        <div class="six">
+                            <section><label>Package Type:</label></section>
+                            <section>
+                                <input type="checkbox" id="basic" name="basic" value="basic">
+                                <label for="basic">Basic</label>
+                            </section>
+                            <section>
+                                <input type="checkbox" id="indoor" name="indoor" value="indoor">
+                                <label for="indoor">Indoor</label>
+                            </section>
+                            <section>
+                                <input type="checkbox" id="outdoor" name="outdoor" value="outdoor">
+                                <label for="outdoor">Outdoor</label>
+                            </section>
+                            <section>
+                                <input type="checkbox" id="tourist" name="tourist" value="tourist">
+                                <label for="tourist">Tourist</label>
+                            </section>
+                            <section>
+                                <input type="checkbox" id="deluxe" name="deluxe" value="deluxe">
+                                <label for="deluxe">Deluxe</label>
+                            </section>
+                        </div>
+                    </fieldset>
+                    <fieldset class="two">
+                        <legend>Additional Information</legend>
+                        <div>
+                            <label for="budget">Budget:</label>
+                            <input type="number" min="1" step="any" id="budget" name="budget">
+                        </div>
+                        <div>
+                            <label for="adults">Adults:</label>
+                            <select name="adults" id="adults">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="children">Children:</label>
+                            <select name="children" id="children">
+                                <option value="1">0</option>
+                                <option value="2">1</option>
+                                <option value="3">2</option>
+                                <option value="4">3</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="message">Message:</label>
+                            <textarea rows="3" id="message" name="message">Please write any special requests</textarea>
+                        </div>
+                    </fieldset>
+                    <fieldset class="two">
+                        <legend>Contact Information</legend>
+                        <div>
+                            <label for="full_name1">Name:</label>
+                            <input type="text" id="full_name1" name="full_name1" required>
+                        </div>
+                        <div>
+                            <label for="email1">Email:</label>
+                            <input type="email" id="email1" name="email1" required>
+                        </div>
+                        <div>
+                            <label for="phone1">Phone:</label>
+                            <input type="tel" id="phone1" name="phone1" required>
+                        </div>
+                    </fieldset>
+                    <input type="button" id="submit_inq" value="Submit Inquiry">
+                    <span id="inq-error"></span>
+                </fieldset>
+            </form>
+
+        </div>
+        <div id="reservation-form">
+            <h2>RESERVATION FORM</h2>
+            <form id="reservation" name="reservation" action="../webpages/form_submit.html">
+                <fieldset id="main_field2">
+                    <fieldset>
+                        <legend>Reservation Information</legend>
+                        <div class="double">
+                            <label for="date-start">Start Date: </label>
+                            <input type="date" id="date-start" name="date-start" class="req" required>
+                            <span></span>
+                            <label for="date-end">End Date: </label>
+                            <input type="date" id="date-end" name="date-end" class="req" required>
+                        </div>
+                        <div class="double">
+                            <label for="adults">Adults:</label>
+                            <select name="adults" id="adults" class="req" required>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                            </select>
+                            <span></span>
+                            <label for="children">Children:</label>
+                            <select name="children" id="children" class="req" required>
+                                <option value="1">0</option>
+                                <option value="2">1</option>
+                                <option value="3">2</option>
+                                <option value="4">3</option>
+                            </select>
+                        </div>
+                        <div class="two">
+                            <div>
+                                <label for="location2">Location:</label>
+                                <select name="location2" id="location2" class="req" required>
+                                    <option value="seaside">Bubblaine</option>
+                                    <option value="sand">Tostarena</option>
+                                    <option value="metro">New Donk City</option>
+                                    <option value="wooded">Steam Gardens</option>
+                                    <option value="cascade">Fossil Falls</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label for="package2">Package Type:</label>
+                                <select name="package2" id="package2" class="req" required>
+                                    <option value="basic">Basic</option>
+                                    <option value="indoor">Indoor</option>
+                                    <option value="outdoor">Outdoor</option>
+                                    <option value="tourist">Tourist</option>
+                                    <option value="deluxe">Deluxe</option>
+                                </select>
+                            </div>
+                        </div>
+                    </fieldset>
+
+                    <fieldset class="two">
+                        <legend>Contact Information</legend>
+                        <div>
+                            <label for="full_name2">Name:</label>
+                            <input type="text" id="full_name2" name="full_name2" class="req" required>
+                        </div>
+                        <div>
+                            <label for="email2">Email:</label>
+                            <input type="email" id="email2" name="email2" class="req" required>
+                        </div>
+                        <div>
+                            <label for="phone2">Phone:</label>
+                            <input type="tel" id="phone2" name="phone2" class="req" required>
+                        </div>
+                    </fieldset>
+                    
+                    <fieldset>
+                        <legend>Billing</legend>
+                        <div class="two">
+                            <div>
+                                <label for="bill_name">Billing Name:</label>
+                                <input type="text" id="bill_name" name="bill_name" class="req" required>
+                            </div>
+                        </div>
+                        <div class="double">
+                            <label for="street">Street:</label>
+                            <input type="text" id="street" name="street" class="req" required>
+                            <span></span>
+                            <label for="city">City:</label>
+                            <input type="text" id="city" name="city" class="req" required>
+                        </div>
+                        <div class="double">
+                            <label for="province">Province:</label>
+                            <input type="text" id="province" name="province" class="req" required>
+                            <span></span>
+                            <label for="postal">Postal Code:</label>
+                            <input type="text" id="postal" name="postal" class="req" required>
+                        </div>
+                    </fieldset>
+                    <input type="button" id="submit_resv" value="Submit Reservation">
+                    <span id="resv-error"></span>
+                </fieldset>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <div id="hours">
+            <ul>
+                <li class="lititle">Live Help Hours</li>
+                <li>Mon-Fri: 8am-8pm</li>
+                <li>Sat-Sun: 10am-6pm</li>
+            </ul>
+        </div>
+        <div id="contact">
+            <ul>
+                <li class="lititle">Contact Info</li>
+                <li><a href="tel:18006642359">1-800-664-2FLY</a></li>
+                <li><a href="mailto:odysseytravels@travel.com">odysseytravels@travel.com</a></li>
+            </ul>
+        </div>
+        <p> <br>&copy Isabella Enriquez & Sylvia Samojlenko 2023<br> &copy Nintendo <i>Super Mario Odyssey</i> (2017)</p>
+    </footer>
+    <script src="../js/forms.js"></script>
+</body>
+</html>
